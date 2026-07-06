@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logiprime | Enterprise Yardi & J.P. Morgan Payments Automation</title>
+  <meta name="description" content="Logiprime integrates Yardi Voyager with J.P. Morgan Chase APIs to eliminate AP fraud via real-time AVS validation and automate Host-to-Host payments.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header id="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo" id="nav-logo">
+        <div class="logo-icon">L</div>
+        <span>Logiprime</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link active" id="link-home">Home</a>
+        <a href="about.html" class="nav-link" id="link-about">About Us</a>
+        <a href="contact.html" class="nav-link" id="link-contact">Contact Us</a>
+        
+        <!-- Mobile Actions -->
+        <div class="nav-actions-mobile" style="display: none;">
+          <a href="contact.html" class="btn btn-primary" id="mobile-btn-demo">Request Demo</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Theme">
+          <!-- Moon Icon -->
+          <svg class="moon" viewBox="0 0 24 24">
+            <path d="M12 3c.132 0 .263 0 .393.007a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 3zm0-2a11 11 0 1 0 10.985 12.06 9.5 9.5 0 0 1-9.5-12.052c.184 0 .356-.008.515-.008z"/>
+          </svg>
+          <!-- Sun Icon -->
+          <svg class="sun" viewBox="0 0 24 24">
+            <path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414 2.122 2.122-1.414 1.414-2.122-2.122zM16.95 18.364l1.414-1.414 2.122 2.122-1.414 1.414-2.122-2.122zM1 11h3v2H1v-2zm19 0h3v2h-3v-2zM3.515 19.071l2.122-2.122 1.414 1.414-2.122 2.122-1.414-1.414zm13.435-14.142l2.122-2.122 1.414 1.414-2.122 2.122-1.414-1.414z"/>
+          </svg>
+        </button>
+        <a href="contact.html" class="btn btn-primary" id="nav-btn-demo">Request Demo</a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero section animate-fade-in" id="home-hero">
+    <div class="hero-background">
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+    </div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="section-tag">Yardi + J.P. Morgan Integration Specialists</span>
+        <h1 class="hero-title">Automate Payments. <span>Eliminate AP Fraud.</span></h1>
+        <p class="hero-desc">Secure, native integrations connecting Yardi Voyager to J.P. Morgan Chase. Automate your wire validation and streamline host-to-host payments with no middleware and no transaction fees.</p>
+        <div class="hero-buttons">
+          <a href="#products" class="btn btn-primary" id="hero-btn-explore">Explore Our Solutions</a>
+          <a href="contact.html" class="btn btn-secondary" id="hero-btn-contact">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="card-stack">
+          <div class="interactive-card card-1" id="interactive-card-1">
+            <h4 style="color:var(--accent-primary); margin-bottom: 8px;">JPMorgan AVS Validation</h4>
+            <p style="font-size:0.85rem; color:var(--text-secondary);">Real-time account ownership checks embedded within Yardi vendor onboarding workflow.</p>
+            <div style="margin-top:12px; display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-size:0.8rem; font-weight:700; color:var(--accent-success);">● Status: Secure</span>
+              <span style="font-size:0.75rem; color:var(--text-secondary);">&lt; 15 min</span>
+            </div>
+          </div>
+          <div class="interactive-card card-2" id="interactive-card-2">
+            <h4 style="color:var(--accent-secondary); margin-bottom: 8px;">Host-to-Host Payments</h4>
+            <p style="font-size:0.85rem; color:var(--text-secondary);">Direct ISO 20022 payments (pain.001/pain.002) run directly from Yardi Core.</p>
+            <div style="margin-top:12px; display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-size:0.8rem; font-weight:700; color:var(--accent-primary);">● Direct XML H2H</span>
+              <span style="font-size:0.75rem; color:var(--text-secondary);">No Middleware</span>
+            </div>
+          </div>
+          <div class="interactive-card card-3" id="interactive-card-3">
+            <h4 style="margin-bottom: 8px;">Audit &amp; Security</h4>
+            <p style="font-size:0.85rem; color:var(--text-secondary);">Fully compliant with SOC 2 requirements. Restricts AP risk exposure.</p>
+            <div style="margin-top:12px; display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-size:0.8rem; font-weight:700;">● SOC 2 Ready</span>
+              <span style="font-size:0.75rem; color:var(--text-secondary);">100% Automated</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Stats Bar -->
+    <div class="container">
+      <div class="stats-bar">
+        <div class="stat-item" id="stat-fraud">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Wire Fraud Attempts Blocked</div>
+        </div>
+        <div class="stat-item" id="stat-calls">
+          <div class="stat-number">Zero</div>
+          <div class="stat-label">Manual Verification Calls Required</div>
+        </div>
+        <div class="stat-item" id="stat-time">
+          <div class="stat-number">&lt;15 min</div>
+          <div class="stat-label">Average Validation Turnaround</div>
+        </div>
+        <div class="stat-item" id="stat-savings">
+          <div class="stat-number">$50k+</div>
+          <div class="stat-label">Saved Annually in Middleware Fees</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="section" id="products" style="background-color: var(--bg-primary);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 60px;">
+        <span class="section-tag">Enterprise Core Products</span>
+        <h2 class="section-title">Integrations Built for Finance Teams</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Deep API-level integrations connecting Yardi Voyager workflows directly to J.P. Morgan services, bypassing costly third-party vendors.</p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1: Wire Validation -->
+        <div class="product-card" id="prod-wire-val">
+          <span class="product-tag">Fraud Prevention</span>
+          <div class="product-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="m9 11 2 2 4-4"/>
+            </svg>
+          </div>
+          <h3>Automated Vendor Wire Validation via JPMorgan AVS</h3>
+          <p class="product-desc">Protect your treasury from Business Email Compromise (BEC) and vendor spoofing. Check account and routing authenticity inside the native vendor onboarding workflow before payments release.</p>
+          
+          <ul class="product-features">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+              <span><strong>JPMorgan AVS Integration:</strong> Directly queries JPMorgan Chase's Account Validation Service database.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+              <span><strong>Workflow-Native:</strong> Runs inline during Yardi onboarding, routes to approvals or re-entry automatically.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+              <span><strong>Compliance &amp; Insurance:</strong> Supports SOC 2 requirements and reduces E&amp;O and cyber liability risk.</span>
+            </li>
+          </ul>
+
+          <div class="workflow-diagram">
+            <div class="flow-step">
+              <div class="flow-circle">1</div>
+              <span>Vendor Data Entry</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <div class="flow-circle" style="background:var(--accent-primary); color:white;">2</div>
+              <span>JPM AVS Query</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <div class="flow-circle" style="background:var(--accent-success); color:white;">✓</div>
+              <span>Auto Approval</span>
+            </div>
+          </div>
+
+          <a href="contact.html?product=wire-validation" class="btn btn-secondary" id="btn-quote-wire">Schedule Demo</a>
+        </div>
+
+        <!-- Product 2: Host to Host -->
+        <div class="product-card" id="prod-h2h">
+          <span class="product-tag">Payments Automation</span>
+          <div class="product-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect width="18" height="18" x="3" y="3" rx="2"/>
+              <path d="M3 9h18"/>
+              <path d="M9 21V9"/>
+            </svg>
+          </div>
+          <h3>Yardi to J.P. Morgan Host-to-Host Payments</h3>
+          <p class="product-desc">Automate outbound ACH, domestic/international wires, and check disbursements directly from your Yardi environment without intermediate servers or transaction fees.</p>
+          
+          <ul class="product-features">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+              <span><strong>ISO 20022 Standardized:</strong> Automatically generates pain.001 files and ingests pain.002 status files.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+              <span><strong>No Middleware:</strong> Connects Yardi File Server directly to JPMorgan Pay Source over PGP-encrypted SFTP.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+              <span><strong>Cost Savings:</strong> Replaces $50k+/year Treasury Management System (TMS) subscriptions.</span>
+            </li>
+          </ul>
+
+          <div class="workflow-diagram">
+            <div class="flow-step">
+              <div class="flow-circle">1</div>
+              <span>Yardi Voyager</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <div class="flow-circle" style="background:var(--accent-secondary); color:white;">2</div>
+              <span>Secure File SFTP</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <div class="flow-circle" style="background:var(--accent-primary); color:white;">3</div>
+              <span>J.P. Morgan</span>
+            </div>
+          </div>
+
+          <a href="contact.html?product=h2h-payments" class="btn btn-secondary" id="btn-quote-h2h">Schedule Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Banner Section -->
+  <section class="section" id="call-to-action">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Ready to Secure &amp; Automate Your Payments?</h2>
+        <p>Talk to our integration experts. Schedule a live product demo using a test Yardi sandbox environment to see our automated validation in action.</p>
+        <a href="contact.html" class="btn btn-primary" id="cta-btn-contact-us">Book a Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="margin-bottom:12px;">
+          <div class="logo-icon">L</div>
+          <span>Logiprime</span>
+        </a>
+        <p>Enterprise payment automations and fraud prevention solutions for Yardi and J.P. Morgan customers.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="index.html#prod-wire-val">Wire Validation</a></li>
+          <li><a href="index.html#prod-h2h">Host-to-Host Payments</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Logiprime. All rights reserved. Confidential.</p>
+      <div style="display:flex; gap:16px;">
+        <span style="font-size:0.85rem; color:var(--text-secondary);">SOC 2 Compliant</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
