@@ -152,7 +152,7 @@ function initContactForm() {
       }
     } catch (error) {
       console.error('Contact form submission error:', error);
-      showFeedback('Unable to send request. Please check your network connection or contact us directly at integrations@logiprime.com.', 'error');
+      showFeedback('Unable to send request. Please check your network connection or contact us directly at integrations@logiprime.net.', 'error');
     } finally {
       // Clear Loading State UI
       submitBtn.disabled = false;
