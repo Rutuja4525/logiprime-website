@@ -58,7 +58,7 @@ export async function onRequestPost(context) {
     return new Response(
       JSON.stringify({
         success: true,
-        message: "Thank you for reaching out! A Logiprime integration architect will contact you within 24 hours to review your requirements and schedule a live demo."
+        message: "Thank you for reaching out! A LogiPrime integration architect will contact you within 24 hours to review your requirements and schedule a live demo."
       }),
       { 
         status: 200, 

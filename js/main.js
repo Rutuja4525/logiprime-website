@@ -145,14 +145,14 @@ function initContactForm() {
       const responseData = await response.json();
 
       if (response.ok && responseData.success) {
-        showFeedback(responseData.message || 'Thank you! Your inquiry has been submitted. Our integrations team will contact you shortly.', 'success');
+        showFeedback(responseData.message || 'Thank you! Your inquiry has been submitted. Our integration team will contact you shortly.', 'success');
         form.reset();
       } else {
         throw new Error(responseData.message || 'Server rejected the request.');
       }
     } catch (error) {
       console.error('Contact form submission error:', error);
-      showFeedback('Unable to send request. Please check your connection or contact us directly at integrations@logiprime.com.', 'error');
+      showFeedback('Unable to send request. Please check your network connection or contact us directly at integrations@logiprime.com.', 'error');
     } finally {
       // Clear Loading State UI
       submitBtn.disabled = false;
